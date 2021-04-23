@@ -45,6 +45,7 @@
 div#hobbieGrid_ID{
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 75%;
 }
 
 div#titHobby_ID{

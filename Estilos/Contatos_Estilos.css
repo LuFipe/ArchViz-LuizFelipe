@@ -2,9 +2,9 @@
 	max-width: 25em;
 	height: 3em;
 	display: grid;
-	grid-template-columns: 3em 20em;
+	grid-template-columns: 3em 22em;
 	grid-template-rows: 2em 1em;
-	margin: 1.5em 3em 1.5em 3em ;
+	margin: 1.5em auto 1.5em auto ;
 	border-radius: 3em 1em 1em 3em ;
 	background-image: linear-gradient(white, rgba(0,0,0,0));
 }

@@ -44,6 +44,7 @@ header{
 
 section{
 	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
@@ -87,6 +88,9 @@ ul{
 br{
 	margin: 0em;
 }
+a{
+	text-decoration: none;
+}
 
 ::-webkit-scrollbar{
 	width: .5em;
@@ -107,7 +111,8 @@ br{
 	flex-wrap: wrap;
 	height: auto;
 	width: auto;
-	padding: 1em;	
+	padding: 1em;
+	margin: 0em 0em 10em 0em;
 }
 
 .part1_CLASS{
@@ -187,6 +192,7 @@ div#headerTxt_ID{
 img#imgPerfil_ID{
 	width: 70%;
 	height: 70%;
+	margin: 2em;
 	object-fit: cover;
 	border-radius: 4em .5em 4em .5em;
 	box-shadow: goldenrod .2em .2em 1em;
