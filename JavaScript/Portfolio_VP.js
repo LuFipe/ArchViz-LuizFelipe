@@ -164,7 +164,7 @@ function portfolioCreate(){
 		authPost[i].appendChild(autor[i]);
 
 		imgPerf[i].src = "./Assets/Perfil.png";
-		imgPost[i].src = "./Assets/Projetos/Ambientes/"+i+".png";
+		imgPost[i].src = "./Assets/Projetos/Ambientes/"+i+".jpg";
 		imgPost[i].alt = "broken image";
 
 		//Definiçao dos ID's
