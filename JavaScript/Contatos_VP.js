@@ -7,12 +7,12 @@ function contCreate(){
 	// VARIAVEIS EXISTENTES		//
 	//							//
 
-	var n = 6; //numero de contwares
+	var n = 8; //numero de contwares
 	var contVP = window.document.getElementById("contGrid_ID");
 
 	///////////////////TEXTOS///////////////////////
 
-	var titCont = ['LinkedIn','Blog', 'luizfelipecastrocoelho@gmail.com', 'Juazeiro do Norte - CE, Brasil', '@luizfelipecastrocoelho', '(88) 9 9916 - 5080'];
+	var titCont = ['LinkedIn','Blog', 'luizfelipecastrocoelho@gmail.com', 'Juazeiro do Norte - CE, Brasil', '@luizfelipecastrocoelho', '(88) 9 9916 - 5080', 'Currículo', 'Portfólio'];
 
 	////////////////////////////////////////////////
 
@@ -44,7 +44,7 @@ function contCreate(){
 
 		contCel[i]=window.document.createElement("div");
 		contIMG[i]=window.document.createElement("img");
-		if((i==0)||(i==1)||(i==4)){
+		if((i==0)||(i==1)||(i==4)||(i==6)||(i==7)){
 			contCONT[i]=window.document.createElement("a");
 			switch(i){
 				case 0:
@@ -55,6 +55,12 @@ function contCreate(){
 					break;
 				case 4:
 					contCONT[i].href = "https://www.instagram.com/luizfelipecastrocoelho/";
+					break;
+				case 6:
+					contCONT[i].href = "./Assets/Certificados/Currículo.pdf";
+					break;
+				case 7:
+					contCONT[i].href = "./Assets/Certificados/PortFolio_PC.pdf";
 					break;
 				default:
 			}
