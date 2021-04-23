@@ -176,7 +176,7 @@ img#backGroundIMG_ID{
 	grid-column-start: 1;
 	grid-row-start: 1;
 	object-fit: cover;
-	opacity: .1;
+	opacity: .5;
 }
 
 div#headerTxt_ID{
