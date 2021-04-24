@@ -204,6 +204,7 @@ div#fixedHeader_ID{
 }
 
 div#divAuth_ID{
+	display: flex;
 	background-image: linear-gradient(90deg, #08043B 25% ,#120a8f 50%);
 	border-radius: 1em;
 	box-shadow: goldenrod .2em .2em 1em;
@@ -214,6 +215,7 @@ div#textAuth_ID{
 	display: flex;
 	flex-wrap: wrap;
 	max-height: 50em;
+	width: 89em;
 	padding: .5em;
 	overflow: auto;
 	border-radius: 1em;
