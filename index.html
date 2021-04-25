@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArchiViz||LF</title>
-    <link rel="stylesheet" href="./Estilos/Portfolio_Estilos.css">
-    <link rel="stylesheet" href="./Estilos/Software_Estilos.css">
-    <link rel="stylesheet" href="./Estilos/Contatos_Estilos.css">
-    <link rel="stylesheet" href="./Estilos/Hobbies_Estilos.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ArchiViz||LF</title>
+	<link rel="stylesheet" href="./Estilos/Estilos_Basicos.css">
+	<link rel="stylesheet" href="./Estilos/Portfolio_Estilos.css">
+	<link rel="stylesheet" href="./Estilos/Software_Estilos.css">
+	<link rel="stylesheet" href="./Estilos/Contatos_Estilos.css">
+	<link rel="stylesheet" href="./Estilos/Hobbies_Estilos.css">
 
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+	<link rel="stylesheet" href="./aos-master/dist/aos.css">
 </head>
-<body>
-    <header>
-        <p>ArchiViz||</p>
-        <p>Luiz Felipe Castro Coelho</p>
-    </header>
-    <section>
-        <div>
-            <p>Main Projects</p>
-            <p>Highlights</p>
-            <hr>
-            <img src="" alt="MAINDIV_IMAGE">
-            <div>HighlightsDiv
-                <img src="" alt="IMG_1">
-                <img src="" alt="IMG_2">
-                <img src="" alt="IMG_3">
-            </div>
-        </div>
-        <div>
-            <P>Portfolio</P>
-            <hr>
-            <div>PortFolioVIEWPORT</div>
-        </div>
-        <div>
-            <img src="" alt="FOTOPERFIL">
-            <div>
-                BOTOES
-            </div>
-            <div>
-                CONT/HOBBIES/SOFT div
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p>Contatos</p>
-    </footer>
-    <script src="./JavaScript/Contatos_VP.js"></script>
-    <script src="./JavaScript/Portfolio_VP.js"></script>
-    <script src="./JavaScript/Software_VP.js"></script>
-    <script src="./JavaScript/Hobbies_VP.js"></script>
+<body id="corpo_ID" onload="portfolioCreate()">
+	<header>
+		<h1>ArchiViz||</h1>
+		<h3>Luiz Felipe Castro Coelho</h3>
+	</header>
+	<section>
+		<div id="intro_ID">
+			<h2>Main Projects</h2>
+			<h2>Highlights</h2>
+			<div class="separadorH_CLASS"></div>
+			<div class="separadorH_CLASS"></div>
+			<img id="mainImage_ID" src="./Assets/Projetos/Ambientes/0.jpg" alt="MAINDIV_IMAGE">
+			<div id="highDiv_ID" >
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/4.jpg" alt="IMG_1">
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/6.jpg" alt="IMG_2">
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/10.jpg" alt="IMG_3">
+			</div>
+		</div>
+		<div id="divPortfolio_ID">
+			<P>Portfolio</P>
+			<div class="separadorH_CLASS"></div>
+			<div id="portfolioViewport_ID" ></div>
+		</div>
+		<div>
+			<img src="./Assets/Perfil.jpg" alt="FOTOPERFIL">
+			<div>
+				BOTOES
+			</div>
+			<div>
+				CONT/HOBBIES/SOFT div
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div id="authSection_ID">
+			<img src="./Assets/Perfil.jpg" alt="FOTOPERFIL">
+			<div>
+				BOTOES
+			</div>
+			<div>
+				CONT/HOBBIES/SOFT div
+			</div>
+		</div>
+	</footer>
+	<script src="./JavaScript/Contatos_VP.js"></script>
+	<script src="./JavaScript/Portfolio_VP.js"></script>
+	<script src="./JavaScript/Software_VP.js"></script>
+	<script src="./JavaScript/Hobbies_VP.js"></script>
 
-    <script src="./aos-master/dist/aos.js"></script>
+	<script src="./aos-master/dist/aos.js"></script>
 </body>
 </html>
