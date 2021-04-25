@@ -38,7 +38,7 @@ function hobbyCreate(){
 
 	for(var i =0;i<n;i++){
 
-		//window.alert("Inicio loop = " + i);
+		//window.alert("Inicio loop Hobby = " + i);
 
 
 		hobbyCel[i]=window.document.createElement("div");
@@ -66,12 +66,10 @@ function hobbyCreate(){
 			//	INICIALIZAÇÃO DE VALORES	//
 			hobbyHOB[i].appendChild(txtNode[i]);
 			hobbyIMG[i].src = "./Assets/Hobbies/"+nInterno+".png";
+			hobbyIMG[i].alt = "Imagem não avaliavel";
 		}else{
 			hobbyCel[i].classList.add("emptyHobbyCel_CLASS");
 		}
-		
-		
-		//	Set AOS						//
-		hobbyCel[i].setAttribute("data-aos","fade-up");
 	}
+	//window.alert("End of loops");
 }

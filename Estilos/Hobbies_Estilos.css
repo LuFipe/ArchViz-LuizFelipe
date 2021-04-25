@@ -10,7 +10,7 @@
 }
 
 .emptyHobbyCel_CLASS{
-	width: 15em;
+	width: 16em;
 	height: 3em;
 	margin: .2em;
 }
@@ -43,9 +43,12 @@
 }
 
 div#hobbieGrid_ID{
-	display: flex;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: none;
 	flex-wrap: wrap;
-	max-width: 75%;
+	max-width: 95%;
+	margin: auto;
 }
 
 div#titHobby_ID{

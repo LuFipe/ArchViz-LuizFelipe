@@ -4,8 +4,8 @@
 .post_CLASS{
 	background-color: rgba(0,0,0,.7);
 	display: grid;
-	grid-template-columns: 13em;
-	grid-template-rows: 12.5em;
+	grid-template-columns: 20em;
+	grid-template-rows: 18em;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: auto;
@@ -42,11 +42,12 @@
 
 .titPost_CLASS{
 	color: white;
-	font-size: 2em;
+	font-size: 1.5em;
 	align-self: center;
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 1;
+	margin-left: 0em;
 }
 
 .imgPerf_CLASS{
@@ -63,7 +64,7 @@
 
 .authPost_CLASS{
 	color: white;
-	font-size: 1.5em;
+	font-size: 1em;
 	align-self: center;
 	grid-column-start: 2;
 	grid-column-end: 5;
@@ -91,8 +92,9 @@ h1#titProtF_ID{
 }
 
 div#sectionPortfolio_ID{
+	text-align: left;
 	overflow: auto;
-	max-height: 30em;
+	height: 45em;
 }
 
 div#portfolioViewport_ID{
@@ -110,3 +112,5 @@ div#portfolioTitulo_ID{
 	height: 10%;
 	margin: auto;
 }
+
+

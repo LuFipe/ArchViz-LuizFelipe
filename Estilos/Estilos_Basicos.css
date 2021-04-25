@@ -6,21 +6,7 @@
 /*	UltraMarine_Pale:		#7B798F 			*/
 /*	UltraMarine_Brighter:	#1A0EC2 			*/
 /*	UltraMarine-Blue: 		#4166f5 			*/
-/*	LightBlue:				#C1CCF5	 			*/
-/*	BabyBlue:				#AFD8F0 			*/
-/* 	SkyBlue-Pale:			#C7E0EB				*/
-/* 	SkyBlue:				#87CEEB				*/
-/*	SkyGreen:				#96E890				*/
-/*	SkyGreen_Saturated:		#0FE800				*/
-/*	SkyGreen_Sat&Brighter:	#066100				*/
-/*	PaleGreen:				#D6FFCF	 			*/
-/*	LimeGreen:				#32CD32	 			*/
-/*	LimeGreen_Brighter:		#3DFF3D	 			*/
-/*	Gold:							 			*/
-/*	GoldenRood:					 				*/
-/*	Black:						 				*/
-/*	White:						 				*/
-/*	wierdcolor: 			#AFD8F0				*/
+
 
 /*	ELEMENTOS PRIMARIOS	*/
 
@@ -35,28 +21,41 @@ header{
 	height: 3em;
 	display: flex;
 	flex-wrap: wrap;
-	color: goldenrod;
+	color: white;
 	background-color: black;
 	text-align: center;
 	font-size: 2em;
 }
 
+section{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 h1{
-	margin: auto 0em auto 2em;
+	margin: .5em 0em auto 1em;
 
 }
 
 h2{
 	margin: auto auto auto 2em;
+	color: goldenrod;
 }
 
 h3{
-	margin: auto auto auto .5em;
+	margin: 3.5em auto auto .5em;
 	font-size: .7em;
 }
 
 p{
 	margin: .5em auto .5em auto;
+}
+
+a{
+	text-decoration: none;
 }
 
 /*		CLASSES			*/
@@ -76,6 +75,16 @@ p{
 	object-fit: cover;
 	padding: .5em;
 	margin: auto;
+}
+
+.btn_CLASS{
+	width: 24%;
+	height: 2em;
+	font-size: 1.5em;
+	margin: auto;
+	border-style: none solid none solid;
+	background-color: rgba(0,0,0,0);
+	cursor: pointer;
 }
 
 /*		ID's			*/
@@ -104,9 +113,52 @@ img#mainImage_ID{
 	object-fit: cover;
 }
 
+img#perfImage_ID{
+	width: 92%;
+	height: 92%;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	margin: auto;
+	object-fit: cover;
+	border-radius: 5em 1em 5em 1em;
+	box-shadow: .5em .5em 1em;
+}
+
 div#authSection_ID{
 	display: grid;
 	grid-template-columns: 25% 75%;
-	grid-template-rows: 2em 23em ;
-	background-color: #0C075E;	
+	grid-template-rows: 3.5em 21.5em ;
+	background-image:linear-gradient(white, #0C075E);
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+div#authVP_ID{
+	display: grid;
+	box-shadow: inset 0.25em 0em .5em;
+	border-radius: .2em;
+	overflow: auto;
+	background-image:linear-gradient(white, #0C075E);
+}
+
+div#authBtn_ID{
+	display: flex;
+}
+
+div#aboutGrid_ID{
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: block;
+}
+
+/*	TOOLS	*/
+::-webkit-scrollbar{
+	width: .5em;
+}
+::-webkit-scrollbar-thumb{
+	background-color: goldenrod;
+	border-radius: .25em;
+	border-color: black;
+	border-style: solid;
+	border-width: .05em;
 }

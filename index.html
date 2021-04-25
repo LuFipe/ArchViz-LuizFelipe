@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="./aos-master/dist/aos.css">
 </head>
-<body id="corpo_ID" onload="portfolioCreate()">
+<body id="corpo_ID" onload="portfolioCreate(), softCreate(), hobbyCreate(), contCreate()">
 	<header>
 		<h1>ArchiViz||</h1>
 		<h3>Luiz Felipe Castro Coelho</h3>
@@ -24,27 +24,33 @@
 			<h2>Highlights</h2>
 			<div class="separadorH_CLASS"></div>
 			<div class="separadorH_CLASS"></div>
-			<img id="mainImage_ID" src="./Assets/Projetos/Ambientes/0.jpg" alt="MAINDIV_IMAGE">
+			<img id="mainImage_ID" src="./Assets/Projetos/Ambientes/0.jpg" alt="MAINDIV_IMAGE" data-aos="fade-right">
 			<div id="highDiv_ID" >
-				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/4.jpg" alt="IMG_1">
-				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/6.jpg" alt="IMG_2">
-				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/10.jpg" alt="IMG_3">
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/4.jpg" alt="IMG_1" data-aos="fade-left">
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/6.jpg" alt="IMG_2" data-aos="fade-left">
+				<img class="highImg_CLASS" src="./Assets/Projetos/Ambientes/10.jpg" alt="IMG_3"data-aos="fade-left">
 			</div>
 		</div>
-		<div >
-			<P>Portfolio</P>
-			<div class="separadorH_CLASS"></div>
+		<div id="sectionPortfolio_ID" data-aos="fade-up">
+			<h2 style="font-size: 3.5em; margin-left: 1em; color: #0BA10B;">Portfolio</h2>
+			<div class="separadorH_CLASS" style="background-color:#0BA10B;"></div>
 			<div id="portfolioViewport_ID" ></div>
 		</div>
 	</section>
 	<footer>
 		<div id="authSection_ID">
-			<img src="./Assets/Perfil.jpg" alt="FOTOPERFIL">
-			<div>
-				BOTOES
+			<img id="perfImage_ID" src="./Assets/Perfil.jpg" alt="FOTOPERFIL">
+			<div id="authBtn_ID">
+				<button class="btn_CLASS" onclick="dspSobre()">Sobre</button>
+				<button class="btn_CLASS" onclick="dspSoft()">Softwares</button>
+				<button class="btn_CLASS" onclick="dspHobby()">Hobbies</button>
+				<button class="btn_CLASS" onclick="dspCont()">Contatos</button>
 			</div>
-			<div>
-				CONT/HOBBIES/SOFT div
+			<div id="authVP_ID">
+				<div id="aboutGrid_ID">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eius cupiditate explicabo nemo doloribus tempora repellat asperiores, provident necessitatibus, laboriosam, vero aspernatur totam a! Nesciunt velit illum id dolorum quod!</div>
+				<div id="softGrid_ID"></div>
+				<div id="hobbieGrid_ID"></div>
+				<div id="contGrid_ID"></div>
 			</div>
 		</div>
 	</footer>
@@ -52,7 +58,13 @@
 	<script src="./JavaScript/Portfolio_VP.js"></script>
 	<script src="./JavaScript/Software_VP.js"></script>
 	<script src="./JavaScript/Hobbies_VP.js"></script>
+	<script src="./JavaScript/Basic_Interactio.js"></script>
 
 	<script src="./aos-master/dist/aos.js"></script>
+	<script>
+		AOS.init({
+		  easing: 'ease-in-out-sine'
+		});
+	  </script>
 </body>
 </html>

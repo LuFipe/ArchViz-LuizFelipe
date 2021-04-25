@@ -40,7 +40,7 @@ function contCreate(){
 
 	for(var i =0;i<n;i++){
 
-		//window.alert("Inicio loop = " + i);
+		//window.alert("Inicio loop Cont = " + i);
 
 		contCel[i]=window.document.createElement("div");
 		contIMG[i]=window.document.createElement("img");
@@ -84,5 +84,6 @@ function contCreate(){
 		//	INICIALIZAÇÃO DE VALORES	//
 		contCONT[i].appendChild(txtNode[i]);
 		contIMG[i].src = "./Assets/Contatos/"+i+".png";
+
 	}
 }

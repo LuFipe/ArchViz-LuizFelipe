@@ -4,7 +4,7 @@
 	display: grid;
 	grid-template-columns: 3em 22em;
 	grid-template-rows: 2em 1em;
-	margin: 1.5em auto 1.5em auto ;
+	margin: 1em auto 1em auto ;
 	border-radius: 3em 1em 1em 3em ;
 	background-image: linear-gradient(white, rgba(0,0,0,0));
 }
@@ -38,11 +38,13 @@
 	padding: .3em;
 	border-style: none none solid none;
 	border-width: .05em;
-	color: white;
+	color: black;
 }
 
 div#contGrid_ID{
-	display: flex;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	display: none;
 	flex-wrap: wrap;
 }
 
