@@ -12,7 +12,7 @@ function dspSobre(){
 	hobby.style.display = "none";
 	cont.style.display = "none";
 	expGrad.style.display = "none";
-	about.style.display = "flex";
+	about.style.display = "block";
 }
 function dspSoft(){
 	//window.alert("Entrou Soft");
