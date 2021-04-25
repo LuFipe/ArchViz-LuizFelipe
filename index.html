@@ -7,6 +7,7 @@
 	<title>ArchiViz||LF</title>
 	<link rel="stylesheet" href="./Estilos/Estilos_Basicos.css">
 	<link rel="stylesheet" href="./Estilos/Portfolio_Estilos.css">
+	<link rel="stylesheet" href="./Estilos/gradExp_Estilo.css">
 	<link rel="stylesheet" href="./Estilos/Software_Estilos.css">
 	<link rel="stylesheet" href="./Estilos/Contatos_Estilos.css">
 	<link rel="stylesheet" href="./Estilos/Hobbies_Estilos.css">
@@ -16,7 +17,7 @@
 <body id="corpo_ID" onload="portfolioCreate(), softCreate(), hobbyCreate(), contCreate()">
 	<header>
 		<h1>ArchiViz||</h1>
-		<h3>Luiz Felipe Castro Coelho</h3>
+		<h4>Luiz Felipe Castro Coelho</h4>
 	</header>
 	<section>
 		<div id="intro_ID">
@@ -42,12 +43,79 @@
 			<img id="perfImage_ID" src="./Assets/Perfil.jpg" alt="FOTOPERFIL">
 			<div id="authBtn_ID">
 				<button class="btn_CLASS" onclick="dspSobre()">Sobre</button>
+				<button class="btn_CLASS" onclick="dspExpGrad()">Graduação <br> & Experiencia</button>
 				<button class="btn_CLASS" onclick="dspSoft()">Softwares</button>
 				<button class="btn_CLASS" onclick="dspHobby()">Hobbies</button>
 				<button class="btn_CLASS" onclick="dspCont()">Contatos</button>
 			</div>
 			<div id="authVP_ID">
 				<div id="aboutGrid_ID">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eius cupiditate explicabo nemo doloribus tempora repellat asperiores, provident necessitatibus, laboriosam, vero aspernatur totam a! Nesciunt velit illum id dolorum quod!</div>
+				<div id="divExpGrad_ID" class="mainBlock_CLASS">
+					<div id="textArq_ID" class="expGradBOX_CLASS" >
+						<h2>Arquitetura</h2>
+						<ul class="listas_CLASS">
+							<li class="optionMaster_CLASS"><h3>Graduando em Arquitetura e Urbanismo <p>(2015~Presente)</p></h3>
+								<ul><li>9° Semestre - UniJuazeiro</li></ul>
+							</li>
+							<li class="optionMaster_CLASS"><h3>Estágios em Arquitetura</h3> 
+								<ul>
+									<li>Escritorio de Arquitetura MARIA TEREZA <br> (2018~2019)</li>
+									<li>Projetta: Empresa Junior de Engenharia Civil <br> (2017~2019)</li>
+								</ul>
+							</li>
+						</ul>				
+					</div>
+					<div id="textEng_ID" class="expGradBOX_CLASS" >
+						<h2>Engenharia</h2>
+						<ul class="listas_CLASS">
+							<li class="optionMaster_CLASS">
+								<h3>Graduando em Engenharia Civil <p>(2016~Presente)</p></h3>
+								<ul><li>8° Semestre - UFCA</li></ul>
+							</li>
+							<li class="optionMaster_CLASS"><h3>Estágios em Engenharia</h3> 
+								<ul>
+									<li>Minha Casa Minha Vida - Consórcio entre CRC, Emprecon e Morefácil <br> (2015~2016)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="textOutros_ID" class="expGradBOX_CLASS" >
+						<h2>Outros</h2>
+						<ul class="listas_CLASS">
+							<li class="optionMaster_CLASS"><h3>Voluntario na Junior Achievement 2016</h3>
+								<ul>
+									<li>Serviço: Adviser Financeiro <br>(2016~2017)</li>
+								</ul>
+							</li>
+							<li class="optionMaster_CLASS"><h3>Pós-Junior pela Projetta: EJ de Eng. Civil</h3>
+								<ul>
+									<li>Setor de Projetos</li>
+									<li>Setor de Marketing</li>
+								</ul>
+							</li>
+							<li class="optionMaster_CLASS"><h3>Cursos Udemy:</h3>
+								<ul>
+									<li>Completos
+										<ul>
+											<li>O Guia Definitivo para Desenvolvimento de Jogos com Unity</li>
+											<li>3D Studio Max 2018 para Games & VR</li>
+											<li>Build Virtual Reality Games for Google Cardboard using Unity</li>
+											<li>C++: From Beginner to Expert</li>
+										</ul>
+									</li>
+									<li>Em Andamento</li>
+									<ul>
+										<li>Learn the ART of Video Game</li>
+										<li>Adobe Photoshop CC Essential | <br>Photoshop Master Class</li>
+										<li>Desenvolvimento Android 2018- <br>Aprenda a criar 15 apps</li>
+										<li>ZBrush Completo para iniciantes de modelagem e escultura</li>
+										<li>Photoshop, Illustrator, InDesign & Design Gráfico</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div id="softGrid_ID"></div>
 				<div id="hobbieGrid_ID"></div>
 				<div id="contGrid_ID"></div>

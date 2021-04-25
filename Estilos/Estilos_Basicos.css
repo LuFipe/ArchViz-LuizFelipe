@@ -46,6 +46,16 @@ h2{
 }
 
 h3{
+	height: 3.5em;
+	font-size: 1em;
+	color: #3DFF3D;
+	background-image: linear-gradient(90deg ,#7B798F, rgba(0,0,0,0) 110%);
+	text-align: left;
+	padding: .5em;
+	margin: 0em;
+}
+
+h4{
 	margin: 3.5em auto auto .5em;
 	font-size: .7em;
 }
@@ -78,7 +88,7 @@ a{
 }
 
 .btn_CLASS{
-	width: 24%;
+	width: 9em;
 	height: 2em;
 	font-size: 1.5em;
 	margin: auto;
@@ -115,7 +125,7 @@ img#mainImage_ID{
 
 img#perfImage_ID{
 	width: 92%;
-	height: 92%;
+	height: 100%;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	margin: auto;
@@ -143,6 +153,7 @@ div#authVP_ID{
 
 div#authBtn_ID{
 	display: flex;
+	overflow: auto;
 }
 
 div#aboutGrid_ID{
@@ -154,6 +165,7 @@ div#aboutGrid_ID{
 /*	TOOLS	*/
 ::-webkit-scrollbar{
 	width: .5em;
+	height: .5em;
 }
 ::-webkit-scrollbar-thumb{
 	background-color: goldenrod;
