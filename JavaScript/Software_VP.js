@@ -53,7 +53,7 @@ function softCreate(){
 
 	for(var i =0;i<n;i++){
 
-		//window.alert("Inicio loop = " + i);
+		//window.alert("Inicio loop Soft = " + i);
 
 		softCel[i]=window.document.createElement("div");
 		softIMG[i]=window.document.createElement("img");
@@ -74,14 +74,13 @@ function softCreate(){
 		softCel[i].appendChild(softIMG[i]);
 		softCel[i].appendChild(softSOFT[i]);
 		softCel[i].appendChild(softLv[i]);
-
+		
 		//	INICIALIZAÇÃO DE VALORES	//
 		softSOFT[i].appendChild(txtNode[i]);
 		softLv[i].appendChild(lvNode[i]);
-		if(i == 1)softIMG[1].src = "./Assets/Softwares/1.jpg";
-		else softIMG[i].src = "./Assets/Softwares/"+i+".png";
-
-		//	Set AOS						//
-		softCel[i].setAttribute("data-aos","fade-up");
+		
+		softIMG[i].src = "./Assets/Softwares/"+i+".png";
+		//softIMG.alt[i] = "Imagem nao avaliavel";
+		//window.alert("Ponto loop Soft = " + i);
 	}
 }
