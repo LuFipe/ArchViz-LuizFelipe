@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="./aos-master/dist/aos.css">
 </head>
-<body id="corpo_ID" onload="portfolioCreate(), softCreate(), hobbyCreate(), contCreate()">
+<body id="corpo_ID" onload="portfolioAmbienteCreate(), portfolioModelosCreate(), softCreate(), hobbyCreate(), contCreate()">
 	<header>
 		<h1>ArchiViz||</h1>
 		<h4>Luiz Felipe Castro Coelho</h4>
@@ -33,9 +33,18 @@
 			</div>
 		</div>
 		<div id="sectionPortfolio_ID" data-aos="fade-up">
-			<h2 style="font-size: 3.5em; margin-left: 1em; color: #0BA10B;">Portfolio</h2>
+			<div style="display: flex;">
+				<h2 style="font-size: 3.5em; margin: auto 1em auto 1em; color: #0BA10B;">Portfolio</h2>
+				<button class="btn_CLASS" style="margin-right: .25em; margin-left: 1em;" onclick="dspAmbiente()">Ambientes</button>
+				<button class="btn_CLASS" style="margin: auto .25em auto .25em" onclick="dspModelo()">Modelos 3D</button>
+				<button class="btn_CLASS" style="margin-left: .25em;" onclick="dsp3DView()">Visualização 3D</button>
+			</div>
 			<div class="separadorH_CLASS" style="background-color:#0BA10B;"></div>
-			<div id="portfolioViewport_ID" ></div>
+			<div id="boxViewport_ID">
+				<div class="portfolioViewport_CLASS" id="portfolioAmbientes_ID" style="display: flex;"></div>
+				<div class="portfolioViewport_CLASS" id="portfolioModelos_ID"  style="display: none;"></div>
+				<div class="portfolioViewport_CLASS" id="portfolio3Dviews_ID"  style="display: none;" ></div>
+			</div>
 		</div>
 	</section>
 	<footer>
@@ -73,7 +82,6 @@
 							<li class="optionMaster_CLASS"><h3>Estágios em Arquitetura</h3> 
 								<ul>
 									<li>Escritorio de Arquitetura MARIA TEREZA <br> (2018~2019)</li>
-									<li>Projetta: Empresa Junior de Engenharia Civil <br> (2017~2019)</li>
 								</ul>
 							</li>
 						</ul>				
@@ -88,6 +96,7 @@
 							<li class="optionMaster_CLASS"><h3>Estágios em Engenharia</h3> 
 								<ul>
 									<li>Minha Casa Minha Vida - Consórcio entre CRC, Emprecon e Morefácil <br> (2015~2016)</li>
+									<li>Projetta: Empresa Junior de Engenharia Civil <br> (2017~2019)</li>
 								</ul>
 							</li>
 						</ul>

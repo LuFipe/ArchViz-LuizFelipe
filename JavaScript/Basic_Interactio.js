@@ -71,3 +71,36 @@ function dspExpGrad(){
 	about.style.display = "none";
 	expGrad.style.display = "flex";
 }
+
+function dspAmbiente(){
+	//window.alert("Entrou Ab");
+	var vpAmbiente = window.document.getElementById("portfolioAmbientes_ID");
+	var vpModelo = window.document.getElementById("portfolioModelos_ID");
+	var vp3D = window.document.getElementById("portfolio3Dviews_ID");
+
+	vpModelo.style.display = "none";
+	vp3D.style.display = "none";
+	vpAmbiente.style.display = "flex";
+}
+
+function dspModelo(){
+	//window.alert("Entrou Ab");
+	var vpAmbiente = window.document.getElementById("portfolioAmbientes_ID");
+	var vpModelo = window.document.getElementById("portfolioModelos_ID");
+	var vp3D = window.document.getElementById("portfolio3Dviews_ID");
+
+	vp3D.style.display = "none";
+	vpAmbiente.style.display = "none";
+	vpModelo.style.display = "flex";
+}
+
+function dsp3DView(){
+	//window.alert("Entrou Ab");
+	var vpAmbiente = window.document.getElementById("portfolioAmbientes_ID");
+	var vpModelo = window.document.getElementById("portfolioModelos_ID");
+	var vp3D = window.document.getElementById("portfolio3Dviews_ID");
+
+	vpAmbiente.style.display = "none";
+	vpModelo.style.display = "none";
+	vp3D.style.display = "flex";
+}

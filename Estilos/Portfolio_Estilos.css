@@ -84,6 +84,15 @@
 	cursor: pointer;
 }
 
+.portfolioViewport_CLASS{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+	margin: auto;
+	/*padding: 1em;
+	box-shadow: inset black 0em 0em 1em;*/
+}
+
 /* ID's */
 
 h1#titProtF_ID{
@@ -95,17 +104,6 @@ div#sectionPortfolio_ID{
 	text-align: left;
 	overflow: auto;
 	height: 45em;
-}
-
-div#portfolioViewport_ID{
-	display: flex;
-	flex-wrap: wrap;
-	overflow: auto;
-	height: 85%;
-	max-width: 100%;
-	margin: auto;
-	padding: 1em;
-	box-shadow: inset black 0em 0em 1em;
 }
 
 div#portfolioTitulo_ID{

@@ -88,11 +88,13 @@ a{
 }
 
 .btn_CLASS{
-	width: 9em;
+	width: 11em;
 	height: 2em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin: auto;
 	border-style: none solid none solid;
+	border-color: #0BA10B;
+	color: #0BA10B;
 	background-color: rgba(0,0,0,0);
 	cursor: pointer;
 }
@@ -166,6 +168,17 @@ div#aboutGrid_ID{
 	grid-column-start: 1;
 	grid-row-start: 1;
 	display: block;
+}
+
+div#boxViewport_ID{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+	height: 85%;
+	max-width: 100%;
+	margin: auto;
+	padding: 1em;
+	box-shadow: inset black 0em 0em 1em;
 }
 
 /*	TOOLS	*/
