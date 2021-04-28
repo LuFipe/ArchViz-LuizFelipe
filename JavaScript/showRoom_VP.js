@@ -1,5 +1,5 @@
 function createShowRoom(){
-	window.alert("ShowRoomCrreated");
+	//window.alert("ShowRoomCrreated");
 	//Declaração e inicialização de variaveis//
 
 	var showroom_VP = window.document.getElementById("showRoom_ID");
