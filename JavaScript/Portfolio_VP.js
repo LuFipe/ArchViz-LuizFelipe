@@ -1,4 +1,7 @@
 
+
+
+
 //função basica para pegar ID
 /*
 function pegarID(clicked_id){
@@ -199,6 +202,7 @@ function portfolioAmbienteCreate(){
 
 		clicavel[i].onmouseover = function(){showSmokeScreen(0, this.id)}
 		clicavel[i].onmouseout = function(){hideSmokeScreen(0, this.id)}
+		clicavel[i].onclick = function(){dspShowRoom(0, this.id)};
 	}
 }
 
@@ -312,5 +316,6 @@ function portfolioModelosCreate(){
 
 		clicavel[i].onmouseover = function(){showSmokeScreen(1, this.id)}
 		clicavel[i].onmouseout = function(){hideSmokeScreen(1, this.id)}
+		clicavel[i].onclick = function(){dspShowRoom(1, this.id)};
 	}
 }
